@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/btn_create"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Student" />
+
+    <EditText
+        android:id="@+id/txt_firstname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Firstname"
+        android:layout_margin="10dp"
+
+        />
+    <EditText
+    android:id="@+id/txt_email"
+    android:layout_width="match_parent"
+        android:hint="Email"
+        android:layout_margin="10dp"
+    android:layout_height="wrap_content"
+
+    />
+<Button
+    android:id="@+id/btn_view"
+    android:layout_width="wrap_content"
+    android:text="View"
+    android:layout_height="wrap_content" />
+</LinearLayout>

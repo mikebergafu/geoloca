@@ -1,3 +1,60 @@
 <resources>
-    <string name="app_name">Geo Loc</string>
+    <string name="app_name">DataBreed</string>
+    <string name="hint_dob">Enter Age</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_gender">I am</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="btn_sign_up">Register !!</string>
+    <string name="err_msg_name">Please enter a Name</string>
+    <string name="err_msg_required">Valid Input Required</string>
+    <string name="err_msg_email">Please enter a Valid Email</string>
+    <string name="err_msg_password">Enter a Password</string>
+    <string name="err_msg_dob">Enter a valid D.O.B</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_link_signup">Don\'t have an account yet Register !!</string>
+    <string name="btn_link_login">Already have an account Login !!</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="prompt_company_name">Company Name</string>
+    <string name="prompt_username">Username</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="pj_name">Billboard and Signage Capture System</string>
+    <string name="lbl_company">Company Name</string>
+    <string name="lbl_location">Location</string>
+    <string name="lbl_contact">Phone No.</string>
+    <string name="lbl_sign_type">Sign Type</string>
+    <string name="lbl_size">Size (m<sup><small>2</small></sup>)</string>
+    <string name="lbl_contact_method">Contact Method</string>
+    <string name="lbl_next">Next</string>
+    <string name="lbl_submit">Submit</string>
+    <string name="lbl_cam">Click to Get Size</string>
+    <string name="lbl_long">Longitude</string>
+    <string name="lbl_lat">Latitude</string>
+    <string name="lbl_loc">Locate</string>
+    <string name="lbl_face">No. of Face(s)</string>
+    <string name="lbl_view">View Records</string>
+
+    <string name="login_inst"><b>\n\nWelcome! to DataBreed Data Collection App.</b>\n\n\nTo Sign in, you need to register with the admin of this
+    platform. \nUsername and Password will be provided you.\nIf you do not have one yet, please contact the admin via phone 0204038261</string>
+
+    <string-array name="sign_type_array">
+        <item>SELECT SIGN TYPE:</item>
+        <item>Billboard</item>
+        <item>Signage</item>
+        <item>Poster</item>
+        <item>Other</item>
+    </string-array>
 </resources>

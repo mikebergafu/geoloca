@@ -1,0 +1,187 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@color/colorLYellow"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_top_margin"
+    tools:context="com.bitlogictechnologies.databreed.Splash">
+
+    <include layout="@layout/header" />
+
+    <TextView
+        android:id="@+id/lbl_pg_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/all_round_shadow"
+        android:textSize="25sp"
+        android:textColor="@color/colorShadow"
+        android:shadowColor="@color/colorYellow"
+        android:paddingLeft="@dimen/activity_tex_margin"
+        android:shadowRadius="0.2"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/capture_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+            <AutoCompleteTextView
+                android:id="@+id/txt_company_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/lbl_company"
+                android:textSize="@dimen/text_size"
+                android:inputType="textMultiLine"
+                android:maxLines="2" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/txt_location"
+                    android:layout_width="310dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size"
+                    android:hint="@string/lbl_location"
+                    android:inputType="textAutoComplete"
+                    android:maxLines="1" />
+
+                <Button
+                    android:id="@+id/btn_get_location"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:onClick="get_location"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/btn_back_round"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_loc"/>
+            </LinearLayout>
+
+
+            <AutoCompleteTextView
+                android:id="@+id/txt_contact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/lbl_contact"
+                android:textSize="@dimen/text_size"
+                android:inputType="phone"
+                android:maxLines="1" />
+
+            <Spinner
+                android:id="@+id/txt_sign_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/lbl_sign_type"
+                android:textSize="40sp"
+                android:inputType="textAutoComplete"
+                android:maxLines="1" />
+
+            <AutoCompleteTextView
+                android:id="@+id/txt_face"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/lbl_face"
+                android:textSize="@dimen/text_size"
+                android:inputType="number"
+                android:maxLines="1" />
+
+
+           <LinearLayout
+               android:gravity="center_horizontal"
+               android:layout_width="match_parent"
+               android:orientation="vertical"
+               android:layout_height="wrap_content">
+
+               <AutoCompleteTextView
+                   android:id="@+id/txt_long"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textSize="@dimen/text_size"
+                   android:hint="@string/lbl_long"
+                   android:inputType="text"
+                   android:maxLines="1" />
+
+               <AutoCompleteTextView
+                   android:id="@+id/txt_lat"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:textSize="@dimen/text_size"
+                   android:hint="@string/lbl_lat"
+                   android:inputType="text"
+                   android:maxLines="1" />
+           </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/txt_size"
+                    android:layout_width="270dp"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size"
+                    android:hint="@string/lbl_size"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1" />
+
+                <Button
+                    android:id="@+id/btn_take_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lbl_cam"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_margin="10dip"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/text_size"
+        android:layout_gravity="bottom|center"
+        >
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_back_round"
+            android:layout_marginRight="@dimen/activity_tex_margin"
+            android:text="@string/lbl_submit"
+            android:padding="10dip"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_view_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="go_to_records"
+            android:layout_marginLeft="@dimen/activity_tex_margin"
+            android:background="@drawable/btn_back_round"
+            android:text="@string/lbl_view"
+            android:padding="10dip"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+</LinearLayout>
